@@ -10,12 +10,12 @@ const Header = () => {
           Kembangkan Skill, Pelajari Dasar Cara Ngoding Bersama Kami.
         </h1>
         <h3 className="text-lg sm:text-xl md:text-2xl font-medium">
-          <span className="font-bold">Ngoding Yuk</span> adalah website yang
+          <span className="font-bold">Ngoding <span className="underline">Yuk</span></span> adalah website yang
           bisa membantu anda mempelajari dasar-dasar ngoding dan bagaimana cara
           nginstall aplikasi untuk ngoding.
         </h3>
         <Button>
-          <Link className="flex items-center" href="/documents">
+          <Link className="flex items-center" href="/category">
             Mulai Sekarang
             <ArrowRightIcon className="h-4 w-4 ml-2" />
           </Link>
