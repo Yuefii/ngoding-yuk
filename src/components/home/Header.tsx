@@ -7,12 +7,15 @@ const Header = () => {
     <>
       <div className="max-w-3xl space-y-4">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-          Kembangkan Skill, Pelajari Dasar Cara Ngoding Bersama Kami.
+          Kembangkan Skill Kamu, Pelajari Dasar-Dasar Ngoding Bersama Kami!
         </h1>
         <h3 className="text-lg sm:text-xl md:text-2xl font-medium">
-          <span className="font-bold">Ngoding <span className="underline">Yuk</span></span> adalah website yang
-          bisa membantu anda mempelajari dasar-dasar ngoding dan bagaimana cara
-          nginstall aplikasi untuk ngoding.
+          <span className="font-bold">
+            Ngoding<span className="underline">Yuk</span>
+          </span>{" "}
+          adalah website yang menyajikan pengalaman belajar ngoding yang
+          menyenangkan! Temukan dasar-dasar ngoding dan panduan instalasi
+          aplikasi dengan mudah di sini.
         </h3>
         <Button>
           <Link className="flex items-center" href="/category">

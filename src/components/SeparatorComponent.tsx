@@ -12,18 +12,20 @@ const SeparatorComponent = () => {
         </p>
       </div>
       <Separator className="my-4" />
-      <div className="flex h-5 items-center space-x-4 text-sm">
-        <Link className="hover:underline" href="/category/web">
-          Web
-        </Link>
-        <Separator orientation="vertical" />
-        <Link className="hover:underline" href="/category/database">
-          Database
-        </Link>
-        <Separator orientation="vertical" />
-        <Link className="hover:underline" href="/category/tutorial">
-          Tutorial
-        </Link>
+      <div className="flex md:flex-row flex-col md:space-x-4 text-sm">
+        <div className="flex my-2 space-x-4 h-5 text-sm">
+          <Link className="hover:underline" href="/category/web">
+            Web
+          </Link>
+          <Separator orientation="vertical" />
+          <Link className="hover:underline" href="/category/database">
+            Database
+          </Link>
+          <Separator orientation="vertical" />
+          <Link className="hover:underline" href="/category/tutorial">
+            Tutorial
+          </Link>
+        </div>
         <Combobox />
       </div>
     </div>
