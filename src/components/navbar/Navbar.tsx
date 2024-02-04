@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import { NavbarMobile } from "./NavbarMobile";
 
 const Navbar = () => {
   return (
@@ -21,6 +22,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+          <NavbarMobile />
         </main>
       </nav>
     </>

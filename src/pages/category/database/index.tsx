@@ -21,7 +21,7 @@ const DatabasePages = () => {
   return (
     <>
       <Layout>
-        <main className="mt-10">
+        <main className="mt-5">
           <div className="flex gap-2 mb-5">
             {Category.map((item, index) => (
               <Link
