@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
-import { NavbarMobile } from "./NavbarMobile";
+import NavbarMobile from "./NavbarMobile";
 
 const Navbar = () => {
   return (
