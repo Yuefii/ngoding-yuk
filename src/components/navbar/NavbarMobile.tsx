@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { TextAlignCenterIcon } from "@radix-ui/react-icons";
+import { TextAlignRightIcon } from "@radix-ui/react-icons";
 import {
   Sheet,
   SheetClose,
@@ -9,6 +9,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
+import { ModeToggle } from "../ModeToggle";
 
 const NavbarMobile = () => {
   return (
@@ -16,12 +17,15 @@ const NavbarMobile = () => {
       <Sheet>
         <SheetTrigger asChild>
           <Button size="sm" variant="outline">
-            <TextAlignCenterIcon />
+            <TextAlignRightIcon />
           </Button>
         </SheetTrigger>
         <SheetContent className="mt-14">
           <SheetHeader>
             <SheetTitle>Menu</SheetTitle>
+            <div className="flex justify-end">
+              <ModeToggle />
+            </div>
           </SheetHeader>
           <ul className="mt-3 text-lg">
             <li className="p-2">

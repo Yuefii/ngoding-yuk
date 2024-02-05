@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import NavbarMobile from "./NavbarMobile";
+import { ModeToggle } from "../ModeToggle";
 
 const Navbar = () => {
   return (
@@ -20,6 +21,9 @@ const Navbar = () => {
               <Link className="hover:underline" href="/category">
                 Kategori
               </Link>
+            </li>
+            <li>
+              <ModeToggle />
             </li>
           </ul>
           <NavbarMobile />

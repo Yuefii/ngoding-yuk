@@ -8,7 +8,7 @@ const HeroImage = () => {
           <Image
             src="/images/hero.png"
             alt="..."
-            className="object-contain"
+            className="object-containc dark:invert"
             fill
           />
         </div>
