@@ -4,7 +4,7 @@ const Layout = ({children}: any) => {
   return (
     <>
       <div className="container mx-auto">
-        <main>
+        <main className="mb-20">
           <SeparatorComponent />
           {children}
         </main>
