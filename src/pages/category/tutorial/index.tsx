@@ -40,6 +40,7 @@ const TutorialPages = () => {
             <div className="grid grid-cols-12 lg:gap-5">
               {TUTORIAL.map((item, index) => (
                 <Popular
+                  href="#"
                   key={index}
                   img={item.img}
                   judul={item.judul}

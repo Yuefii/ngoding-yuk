@@ -7,7 +7,7 @@ import { HTML } from "@/constants/html";
 const Category = [
   {
     label: "HTML",
-    href: "#",
+    href: "/category/web/html/#1",
   },
   {
     label: "CSS",
@@ -40,6 +40,7 @@ const WebPages = () => {
             <div className="grid grid-cols-12 lg:gap-5">
               {HTML.map((item, index) => (
                 <Popular
+                href={item.href}
                   key={index}
                   img={item.img}
                   judul={item.judul}
