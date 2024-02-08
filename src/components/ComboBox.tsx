@@ -15,7 +15,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import Link from "next/link";
+import { useRouter } from "next/router";
 
 const frameworks = [
   {
@@ -38,6 +38,7 @@ const frameworks = [
 export function Combobox() {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
+  const router = useRouter();
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -66,9 +67,10 @@ export function Combobox() {
                 onSelect={(currentValue) => {
                   setValue(currentValue === value ? "" : currentValue);
                   setOpen(false);
+                  router.push(framework.href);
                 }}
               >
-                <Link href={framework.href}>{framework.label}</Link>
+                {framework.label}
                 <CheckIcon
                   className={cn(
                     "ml-auto h-4 w-4",

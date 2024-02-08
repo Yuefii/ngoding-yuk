@@ -1,12 +1,12 @@
-import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
 import { Combobox } from "./ComboBox";
 
 const SeparatorComponent = () => {
   return (
     <div>
       <div className="space-y-1">
-        <h4 className="text-4xl font-bold leading-none">Kategori</h4>
+        <Link href="/category" className="text-4xl font-bold leading-none hover:underline">Kategori</Link>
         <p className="text-sm pt-2 text-muted-foreground">
           Beberapa kategori yang sering dicari.
         </p>

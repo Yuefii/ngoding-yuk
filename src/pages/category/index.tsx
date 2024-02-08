@@ -1,3 +1,4 @@
+import { POPULAR } from "@/constants/popular";
 import Layout from "./layout";
 import Popular from "@/components/articles/Popular";
 
@@ -9,11 +10,14 @@ const CategoryPages = () => {
           <h1 className="font-bold text-2xl">Artikel Populer</h1>
           <div className="mt-3">
             <div className="grid grid-cols-12 lg:gap-5">
-              <Popular
-                img="/article/article_1.png"
-                judul="Belajar HTML Dasar untuk Pemula"
-                konten="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro, nesciunt numquam libero assumenda quos, beatae, ea alias impedit dolore temporibus modi eum quis. Similique omnis magni amet saepe minus?"
-              />
+              {POPULAR.map((item, index) => (
+                <Popular
+                  key={index}
+                  img={item.img}
+                  judul={item.judul}
+                  konten={item.konten}
+                />
+              ))}
             </div>
           </div>
         </main>
