@@ -5,11 +5,11 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 const Header = () => {
   return (
     <>
-      <div className="max-w-3xl space-y-4">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+      <div className="max-w-2xl space-y-4">
+        <h1 className="text-4xl sm:text-5xl font-bold">
           Kembangkan Skill Kamu, Pelajari Dasar-Dasar Ngoding Bersama Kami!
         </h1>
-        <h3 className="text-lg sm:text-xl md:text-2xl font-medium">
+        <h3 className="text-md sm:text-xl font-medium">
           <span className="font-bold">
             Ngoding<span className="underline">Yuk</span>
           </span>{" "}

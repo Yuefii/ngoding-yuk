@@ -6,7 +6,7 @@ const HomePages = () => {
   return (
     <>
       <Head>
-        <title>Ngoding Yuk | Home</title>
+        <title>Ngoding Yuk | Beranda</title>
         <meta
           name="description"
           content="Kembangkan Skill, Pelajari Dasar Cara Ngoding Bersama Kami."
@@ -18,7 +18,7 @@ const HomePages = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-full flex flex-col">
-        <div className="flex flex-col justify-center items-center text-center gap-y-8 flex-1 px-6 pb-10">
+        <div className="flex flex-col justify-center items-center text-center flex-1 px-6 pb-10">
           <HeroImage />
           <Header />
         </div>
