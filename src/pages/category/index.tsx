@@ -19,10 +19,10 @@ const CategoryPages = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <main className="mt-5">
+        <main className="mt-5 max-w-6xl">
           <h1 className="font-bold text-2xl">Artikel Populer</h1>
           <div className="mt-3">
-            <div className="grid grid-cols-12 lg:gap-5">
+            <div className="grid grid-cols-12 gap-5">
               {POPULAR.map((item, index) => (
                 <Popular
                   href={item.href}

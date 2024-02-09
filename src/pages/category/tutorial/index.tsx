@@ -23,7 +23,7 @@ const TutorialPages = () => {
   return (
     <>
       <Layout>
-        <main className="mt-5">
+        <main className="mt-5 max-w-6xl">
           <div className="flex gap-2 mb-5">
             {Category.map((item, index) => (
               <Link
