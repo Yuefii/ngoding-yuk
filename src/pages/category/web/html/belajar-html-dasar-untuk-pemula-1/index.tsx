@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Image from "next/image";
+import BackButton from "@/components/Back";
 import { POPULAR } from "@/constants/popular";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
@@ -22,6 +23,7 @@ const index = () => {
       <div className="md:container mx-auto">
         <div className="flex lg:flex-row flex-col justify-between gap-8">
           <article className="mb-20 lg:max-w-4xl md:border p-5 rounded-xl">
+            <BackButton />
             <h1 className="text-4xl font-bold my-10">
               Belajar HTML DASAR UNTUK PEMULA
             </h1>
@@ -104,7 +106,20 @@ const index = () => {
                 </SyntaxHighlighter>
               </div>
             </div>
-            <p className="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vel temporibus ut est necessitatibus accusantium earum dolor, magni debitis molestias doloremque molestiae a, ea iste nostrum rerum voluptatem iure reiciendis incidunt! Et corporis eum possimus minima esse eligendi quibusdam incidunt eaque id voluptatem ab, non consectetur obcaecati. Quod, nemo quisquam sapiente quia tempora eaque velit a, ullam corrupti perferendis fuga veniam ea cupiditate sunt praesentium odit accusamus voluptatum optio laboriosam blanditiis, reiciendis maxime culpa ratione? Eligendi soluta minima accusantium autem deserunt. Sunt, provident temporibus aspernatur dolore repellendus voluptatum. Aut id quidem aperiam quo qui harum dolore est facere doloribus ab!</p>
+            <p className="my-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              vel temporibus ut est necessitatibus accusantium earum dolor,
+              magni debitis molestias doloremque molestiae a, ea iste nostrum
+              rerum voluptatem iure reiciendis incidunt! Et corporis eum
+              possimus minima esse eligendi quibusdam incidunt eaque id
+              voluptatem ab, non consectetur obcaecati. Quod, nemo quisquam
+              sapiente quia tempora eaque velit a, ullam corrupti perferendis
+              fuga veniam ea cupiditate sunt praesentium odit accusamus
+              voluptatum optio laboriosam blanditiis, reiciendis maxime culpa
+              ratione? Eligendi soluta minima accusantium autem deserunt. Sunt,
+              provident temporibus aspernatur dolore repellendus voluptatum. Aut
+              id quidem aperiam quo qui harum dolore est facere doloribus ab!
+            </p>
           </article>
           <div className="space-y-4 h-[300px] md:border p-5 rounded-xl">
             <h1 className="text-xl font-semibold">Artikel Terbaru</h1>
