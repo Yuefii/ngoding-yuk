@@ -1,21 +1,21 @@
 import Link from "next/link";
 import Layout from "../layout";
-import { buttonVariants } from "@/components/ui/button";
 import Popular from "@/components/articles/Popular";
+import { buttonVariants } from "@/components/ui/button";
 import { MYSQL } from "@/constants/mysql";
 
 const Category = [
   {
     label: "mysql",
-    href: "#",
+    href: "/category/database/mysql",
   },
   {
     label: "postgresql",
-    href: "#",
+    href: "/category/database/postgresql",
   },
   {
     label: "mongodb",
-    href: "#",
+    href: "/category/database/mongodb",
   },
 ];
 
@@ -40,7 +40,7 @@ const DatabasePages = () => {
             <div className="grid grid-cols-12 lg:gap-5">
               {MYSQL.map((item, index) => (
                 <Popular
-                  href="#"
+                  href={item.href}
                   key={index}
                   img={item.img}
                   judul={item.judul}

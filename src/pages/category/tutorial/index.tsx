@@ -1,21 +1,21 @@
 import Link from "next/link";
 import Layout from "../layout";
-import { buttonVariants } from "@/components/ui/button";
 import Popular from "@/components/articles/Popular";
+import { buttonVariants } from "@/components/ui/button";
 import { TUTORIAL } from "@/constants/tutorial";
 
 const Category = [
   {
     label: "vscode",
-    href: "#",
+    href: "/category/tutorial/vscode",
   },
   {
     label: "xampp",
-    href: "#",
+    href: "/category/tutorial/xampp",
   },
   {
     label: "docker",
-    href: "#",
+    href: "/category/tutorial/docker",
   },
 ];
 
@@ -40,7 +40,7 @@ const TutorialPages = () => {
             <div className="grid grid-cols-12 lg:gap-5">
               {TUTORIAL.map((item, index) => (
                 <Popular
-                  href="#"
+                  href={item.href}
                   key={index}
                   img={item.img}
                   judul={item.judul}

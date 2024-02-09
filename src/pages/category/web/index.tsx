@@ -7,15 +7,15 @@ import { HTML } from "@/constants/html";
 const Category = [
   {
     label: "HTML",
-    href: "/category/web/html/#1",
+    href: "/category/web/html",
   },
   {
     label: "CSS",
-    href: "#",
+    href: "/category/web/css",
   },
   {
     label: "Javascript",
-    href: "#",
+    href: "/category/web/javascript",
   },
 ];
 

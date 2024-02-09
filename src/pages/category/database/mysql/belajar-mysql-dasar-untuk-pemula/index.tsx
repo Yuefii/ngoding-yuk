@@ -23,12 +23,12 @@ const index = () => {
         <div className="flex lg:flex-row flex-col justify-between gap-8">
           <article className="mb-20 lg:max-w-4xl md:border p-5 rounded-xl">
             <h1 className="text-4xl font-bold my-10">
-              Belajar HTML DASAR UNTUK PEMULA
+              Belajar DATABASE MYSQL DASAR UNTUK PEMULA
             </h1>
             <div className="flex justify-center">
               <Image
                 className="my-4 border rounded-xl"
-                src="/article/HTML_1.png"
+                src="/article/MYSQL_1.png"
                 alt="..."
                 width={500}
                 height={500}
