@@ -21,7 +21,7 @@ const Layout = ({ children }: any) => {
       <div className="container mx-auto">
         <main className="mb-20">
           {!disable.includes(pathname) && <SeparatorComponent />}
-          {children}
+          <main className="mt-5 max-w-6xl">{children}</main>
         </main>
       </div>
     </>

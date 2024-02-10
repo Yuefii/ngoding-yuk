@@ -2,6 +2,7 @@ import { POPULAR } from "@/constants/popular";
 import Layout from "./layout";
 import Popular from "@/components/articles/Popular";
 import Head from "next/head";
+import Content from "@/components/articles/Content";
 
 const CategoryPages = () => {
   return (
@@ -19,22 +20,17 @@ const CategoryPages = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <main className="mt-5 max-w-6xl">
-          <h1 className="font-bold text-2xl">Artikel Populer</h1>
-          <div className="mt-3">
-            <div className="grid grid-cols-12 gap-5">
-              {POPULAR.map((item, index) => (
-                <Popular
-                  href={item.href}
-                  key={index}
-                  img={item.img}
-                  judul={item.judul}
-                  konten={item.konten}
-                />
-              ))}
-            </div>
-          </div>
-        </main>
+        <Content title="Artikel Populer">
+          {POPULAR.map((item, index) => (
+            <Popular
+              href={item.href}
+              key={index}
+              img={item.img}
+              judul={item.judul}
+              konten={item.konten}
+            />
+          ))}
+        </Content>
       </Layout>
     </>
   );

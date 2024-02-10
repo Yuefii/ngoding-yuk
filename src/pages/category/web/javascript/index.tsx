@@ -1,15 +1,14 @@
 import BackButton from "@/components/Back";
 import Layout from "../../layout";
+import Content from "@/components/articles/Content";
 
 const WebPages = () => {
   return (
     <>
       <Layout>
         <BackButton />
-        <main className="mt-5 max-w-6xl">
-          <div className="mt-3">
-            <h1 className="font-bold text-4xl">COMING SOON</h1>
-          </div>
+        <main className="mt-3">
+          <Content title="Coming Soon"></Content>
         </main>
       </Layout>
     </>
