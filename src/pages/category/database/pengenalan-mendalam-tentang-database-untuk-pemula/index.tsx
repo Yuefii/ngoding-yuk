@@ -1,4 +1,4 @@
-import { ArtikelSatu } from "@/constants/article/tutorial/article_satu";
+import { ArtikelSatu } from "@/constants/article/database/article_satu";
 
 import Link from "next/link";
 import ContentArtikel from "@/components/articles/ContentArtikel";
@@ -7,8 +7,8 @@ const artikel = () => {
   return (
     <>
       <ContentArtikel
-        title="Cara Menginstall Visual Studio Code di Windows"
-        img="/article/VSCODE.png"
+        title="Pengenalan Mendalam tentang Database untuk Pemula"
+        img="/article/MYSQL_1.png"
       >
         {ArtikelSatu.map((item, index) => (
           <div key={index}>
@@ -16,8 +16,8 @@ const artikel = () => {
             <div className="my-10 max-w-md border rounded-xl p-4">
               <h1 className="text-2xl font-semibold">Daftar Isi</h1>
               <ul className="my-2 list-disc list-inside">
-                {item.langkah_langkah &&
-                  item.langkah_langkah.map((items, index) => (
+                {item.lanjutan &&
+                  item.lanjutan.map((items, index) => (
                     <li
                       className="font-medium cursor-pointer hover:underline"
                       key={index}
@@ -33,12 +33,13 @@ const artikel = () => {
               </ul>
             </div>
             <div className="my-2">
-              {item.langkah_langkah &&
-                item.langkah_langkah.map((items, index) => (
+              {item.lanjutan &&
+                item.lanjutan.map((items, index) => (
                   <div key={index}>
                     <h1 id={items.id} className="text-2xl font-semibold">
                       {items.label}
                     </h1>
+                    <p className="mt-5">{items.pembahasan}</p>
                     <ul className="my-5 p-5 list-inside list-decimal">
                       {items.kontens &&
                         items.kontens.map((konten, index) => (
@@ -53,9 +54,6 @@ const artikel = () => {
             <div className="space-y-4">
               <p className="text-justify">{item.penutup}</p>
               <p className="text-justify">{item.penutup_lanjutan}</p>
-              <p className="text-justify text-2xl font-semibold">
-                {item.caption}
-              </p>
             </div>
             <div className="md:hidden mt-5 border-b-2" />
           </div>
