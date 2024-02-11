@@ -1,23 +1,28 @@
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import { ArtikelSatu } from "@/constants/article/html/article_satu";
+import { ArtikelTiga } from "@/constants/article/html/article_tiga";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+
+import Link from "next/link";
 import ContentArtikel from "@/components/articles/ContentArtikel";
 import useHTMLCodeStore from "@/hooks/useHTMLCode";
-import Link from "next/link";
 
 const artikel = () => {
   const { codes } = useHTMLCodeStore();
 
   const getCode = (items: any) => {
     switch (items.code) {
-      case "code1":
-        return codes.code1.trim();
-      case "code2":
-        return codes.code2.trim();
-      case "code3":
-        return codes.code3.trim();
-      case "code4":
-        return codes.code4.trim();
+      case "code8":
+        return codes.code8.trim();
+      case "code9":
+        return codes.code9.trim();
+      case "code10":
+        return codes.code10.trim();
+      case "code11":
+        return codes.code11.trim();
+      case "code12":
+        return codes.code12.trim();
+      case "code13":
+        return codes.code13.trim();
       default:
         return "";
     }
@@ -26,10 +31,10 @@ const artikel = () => {
   return (
     <>
       <ContentArtikel
-        title="Belajar Struktur Dasar HTML untuk Pemula"
-        img="/article/HTML_1.png"
+        title="Belajar Membuat Header, Footer, Audio, Video dan HTML Lanjutan"
+        img="/article/HTML_3.png"
       >
-        {ArtikelSatu.map((item, index) => (
+        {ArtikelTiga.map((item, index) => (
           <div key={index}>
             <p className="mb-5 text-justify">{item.pendahuluan}</p>
             <p>
@@ -41,7 +46,6 @@ const artikel = () => {
                 Belajar Membuat Form, Tabel dan Semantik HTML.
               </Link>
             </p>
-
             <div className="my-10 max-w-md border rounded-xl p-4">
               <h1 className="text-2xl font-semibold">Daftar Isi</h1>
               <ul className="my-2 list-disc list-inside">

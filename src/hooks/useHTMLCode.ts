@@ -8,6 +8,12 @@ interface Codes {
   code5: string
   code6: string
   code7: string
+  code8: string
+  code9: string
+  code10: string
+  code11: string
+  code12: string
+  code13: string
 }
 
 interface HTMLCodeState {
@@ -17,6 +23,7 @@ interface HTMLCodeState {
 
 const useHTMLCodeStore = create<HTMLCodeState>(set => ({
   codes: {
+    // ARTICLE BELAJAR STRUKTUR DASAR HTML UNTUK PEMULA
     code1: `
 <!DOCTYPE html>
   <html lang="en">
@@ -59,6 +66,7 @@ const useHTMLCodeStore = create<HTMLCodeState>(set => ({
 </body>
     `,
 
+    // ARTICLE BELAJAR MEMBUAT FORM, TABEL, DAN SEMANTIC HTML
     code5: `
 <body>
   <form action="/proses-form" method="post">
@@ -119,6 +127,75 @@ const useHTMLCodeStore = create<HTMLCodeState>(set => ({
     <p>Hak Cipta © 2024 Nama Anda.</p>
   </footer>
 </body>
+    `,
+
+    // BELAJAR MEMBUAT HEADER, FOOTER, AUDIO, VIDEO DAN HTML LANJUTAN
+    code8: `
+<body>
+  <header>
+    <h1>Selamat Datang</h1>
+    <ul>
+      <li>Beranda</li>
+      <li>Tentang Kami</li>
+      <li>Kontak</li>
+    </ul>
+  </header>
+  
+  <footer>
+    <p>Hak Cipta © 2024 Nama Anda.</p>
+  </footer>
+</body>
+    `,
+    code9: `
+<body>
+  <audio controls>
+    <source src="audio.mp3" type="audio/mp3">
+  </audio>
+
+  <video width="320" height="240" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</body>
+    `,
+    code10: `
+<body>   
+  <details>
+    <summary>Klik untuk informasi lebih lanjut</summary>
+    <p>Isi informasi tambahan...</p>
+  </details>
+</body>
+    `,
+    code11: `
+<body> 
+  <article>
+    <h2>Judul Artikel</h2>
+    <p>Isi artikel...</p>
+  </article>
+
+  <aside>
+    <h3>Artikel Terkait</h3>
+    <ul>
+      <li><a href="#">Artikel 1</a></li>
+      <li><a href="#">Artikel 2</a></li>
+    </ul>
+  </aside>
+</body>
+    `,
+    code12: `
+<body>
+  <article>
+    <h2>Judul Artikel</h2>
+    <img src="artikel.jpg" alt="Ilustrasi Artikel">
+    <p>Isi artikel...</p>
+  </article>
+</body>
+    `,
+    code13: `
+<head>
+    <meta name="description" content="Deskripsi halaman web Anda">
+    <meta name="keywords" content="kata kunci, SEO, web">
+    <meta name="author" content="Nama Anda">
+</head>
     `,
   },
   setCode: (codeName: keyof Codes, newCode: string) => set((state) => ({

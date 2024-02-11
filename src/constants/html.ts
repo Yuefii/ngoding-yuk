@@ -13,8 +13,8 @@ export const HTML = [
     },
     {
         img: "/article/HTML_3.png",
-        href: "/category/web/html/belajar-html-dasar-untuk-pemula-3",
-        judul: "Belajar HTML Dasar untuk Pemula #3",
-        konten: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro, nesciunt numquam libero assumenda quos, beatae, ea alias impedit dolore temporibus modi eum quis. Similique omnis magni amet saepe minus?"
+        href: "/category/web/html/belajar-membuat-header-footer-audio-video-dan-html-lanjutan",
+        judul: "Belajar Membuat Header, Footer, Audio, Video dan HTML Lanjutan",
+        konten: "Saat mempelajari dasar-dasar pengembangan web, memahami elemen-elemen inti seperti header, footer, serta penanganan media seperti audio dan video adalah langkah penting. Namun, untuk mengambil langkah berikutnya dalam keahlian Anda."
     },
 ]

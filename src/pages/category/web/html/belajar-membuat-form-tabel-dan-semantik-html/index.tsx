@@ -30,7 +30,7 @@ const artikel = () => {
       >
         {ArtikelDua.map((item, index) => (
           <div key={index}>
-            <p className="mb-5">{item.pendahuluan}</p>
+            <p className="mb-5 text-justify">{item.pendahuluan}</p>
             <Link
               className="text-xl text-blue-800 hover:text-blue-950 hover:underline"
               href="/category/web/html/belajar-struktur-dasar-html-untuk-pemula"
@@ -84,7 +84,7 @@ const artikel = () => {
                   </li>
                 ))}
             </ul>
-            <p>{item.penutup}</p>
+            <p className="text-justify">{item.penutup}</p>
             <div className="md:hidden mt-5 border-b-2" />
           </div>
         ))}
