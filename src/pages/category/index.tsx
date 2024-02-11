@@ -1,10 +1,25 @@
 import { POPULAR } from "@/constants/popular";
+import { useState } from "react";
+import { PaginationArticle } from "@/components/PaginationArticle";
+
 import Layout from "./layout";
 import Popular from "@/components/articles/Popular";
 import Head from "next/head";
 import Content from "@/components/articles/Content";
 
+const ITEMS_PER_PAGE = 3;
+
 const CategoryPages = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handlePageChange = (pageNumber: any) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
+  const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
+  const currentItems = POPULAR.slice(indexOfFirstItem, indexOfLastItem);
+
   return (
     <>
       <Head>
@@ -21,7 +36,7 @@ const CategoryPages = () => {
       </Head>
       <Layout>
         <Content title="Artikel Populer">
-          {POPULAR.map((item, index) => (
+          {currentItems.map((item, index) => (
             <Popular
               href={item.href}
               key={index}
@@ -31,6 +46,12 @@ const CategoryPages = () => {
             />
           ))}
         </Content>
+          <div className="mt-5 flex justify-center items-center">
+            <PaginationArticle
+              handlePageChange={handlePageChange}
+              currentPage={currentPage}
+            />
+          </div>
       </Layout>
     </>
   );

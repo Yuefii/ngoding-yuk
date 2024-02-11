@@ -23,4 +23,16 @@ export const POPULAR = [
         judul: "Pengenalan MYSQL : Sistem Manajemen Basis Data Relasional",
         konten: "MySQL merupakan salah satu sistem manajemen basis data relasional (DBMS) yang paling populer di dunia. Dalam artikel ini, kami akan membahas secara lengkap dan detail tentang apa itu MySQL, mengapa penting, fitur-fiturnya, dan bagaimana cara menggunakan MySQL untuk membangun dan mengelola basis data."
     },
+    {
+        img: "/article/HTML_2.png",
+        href: "/category/web/html/belajar-membuat-form-tabel-dan-semantik-html",
+        judul: "Belajar Membuat Form, Tabel dan Semantik HTML",
+        konten: "Pada kesempatan kali ini, kita akan mengeksplorasi secara mendalam penggunaan Form, Tabel, dan Semantik HTML. Bagi mereka yang belum familiar dengan dasar-dasar struktur HTML, silakan kunjungi link ini untuk pemahaman yang lebih mendalam."
+    },
+    {
+        img: "/article/HTML_3.png",
+        href: "/category/web/html/belajar-membuat-header-footer-audio-video-dan-html-lanjutan",
+        judul: "Belajar Membuat Header, Footer, Audio, Video dan HTML Lanjutan",
+        konten: "Saat mempelajari dasar-dasar pengembangan web, memahami elemen-elemen inti seperti header, footer, serta penanganan media seperti audio dan video adalah langkah penting. Namun, untuk mengambil langkah berikutnya dalam keahlian Anda."
+    },
 ]
