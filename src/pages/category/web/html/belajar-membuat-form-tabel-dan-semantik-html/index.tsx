@@ -1,23 +1,22 @@
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import { ArtikelSatu } from "@/constants/article/html/article_satu";
+import { ArtikelDua } from "@/constants/article/html/article_dua";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+
+import Link from "next/link";
 import ContentArtikel from "@/components/articles/ContentArtikel";
 import useHTMLCodeStore from "@/hooks/useHTMLCode";
-import Link from "next/link";
 
 const artikel = () => {
   const { codes } = useHTMLCodeStore();
 
   const getCode = (items: any) => {
     switch (items.code) {
-      case "code1":
-        return codes.code1.trim();
-      case "code2":
-        return codes.code2.trim();
-      case "code3":
-        return codes.code3.trim();
-      case "code4":
-        return codes.code4.trim();
+      case "code5":
+        return codes.code5.trim();
+      case "code6":
+        return codes.code6.trim();
+      case "code7":
+        return codes.code7.trim();
       default:
         return "";
     }
@@ -26,22 +25,25 @@ const artikel = () => {
   return (
     <>
       <ContentArtikel
-        title="Belajar Struktur Dasar HTML untuk Pemula"
-        img="/article/HTML_1.png"
+        title="Belajar Membuat Form, Tabel dan Semantik HTML"
+        img="/article/HTML_2.png"
       >
-        {ArtikelSatu.map((item, index) => (
+        {ArtikelDua.map((item, index) => (
           <div key={index}>
             <p className="mb-5">{item.pendahuluan}</p>
-            <p>
-              {item.pembahasan}
-              <Link
-                className="text-blue-800 hover:text-blue-950 hover:underline"
-                href="/category/web/html/belajar-struktur-dasar-html-untuk-pemula"
-              >
-                Belajar Membuat Form, Tabel dan Semantik HTML.
-              </Link>
-            </p>
-
+            <Link
+              className="text-xl text-blue-800 hover:text-blue-950 hover:underline"
+              href="/category/web/html/belajar-struktur-dasar-html-untuk-pemula"
+            >
+              Belajar Struktur Dasar HTML untuk Pemula
+            </Link>
+            {item.penjelasan &&
+              item.penjelasan.map((items, index) => (
+                <div className="my-5" key={index}>
+                  <h1 className="text-2xl mb-3 font-semibold">{items.label}</h1>
+                  <p className="font-normal">{items.konten}</p>
+                </div>
+              ))}
             <div className="my-10 max-w-md border rounded-xl p-4">
               <h1 className="text-2xl font-semibold">Daftar Isi</h1>
               <ul className="my-2 list-disc list-inside">
@@ -51,12 +53,7 @@ const artikel = () => {
                       className="font-medium cursor-pointer hover:underline"
                       key={index}
                     >
-                      <Link
-                        className="text-blue-800 hover:text-blue-950"
-                        href={`#${items.id}`}
-                      >
-                        {items.label}
-                      </Link>
+                      <Link className="text-blue-800 hover:text-blue-950" href={`#${items.id}`}>{items.label}</Link>
                     </li>
                   ))}
               </ul>

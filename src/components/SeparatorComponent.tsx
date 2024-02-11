@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-import { Combobox } from "./ComboBox";
+// import { Combobox } from "./ComboBox";
 
 const SeparatorComponent = () => {
   return (
@@ -26,7 +26,7 @@ const SeparatorComponent = () => {
             Tutorial
           </Link>
         </div>
-        <Combobox />
+        {/* <Combobox /> */}
       </div>
     </div>
   );

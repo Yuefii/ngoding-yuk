@@ -1,6 +1,7 @@
 export const ArtikelSatu = [
     {
         pendahuluan: "HTML, singkatan dari HyperText Markup Language, merupakan bahasa markup yang digunakan untuk membuat struktur dasar sebuah halaman web. Bagi pemula, memahami elemen-elemen dasar HTML adalah langkah pertama dalam pengembangan web.",
+        pembahasan: "jika kalian sudah paham dengan materi ini kalian bisa langsung loncat ke materi selanjutnya melalui link ini : ",
         daftar_isi: [
             {
                 id: "1",

@@ -7,9 +7,9 @@ export const HTML = [
     },
     {
         img: "/article/HTML_2.png",
-        href: "/category/web/html/belajar-html-dasar-untuk-pemula-2",
-        judul: "Belajar HTML Dasar untuk Pemula #2",
-        konten: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro, nesciunt numquam libero assumenda quos, beatae, ea alias impedit dolore temporibus modi eum quis. Similique omnis magni amet saepe minus?"
+        href: "/category/web/html/belajar-membuat-form-tabel-dan-semantik-html",
+        judul: "Belajar Membuat Form, Tabel dan Semantik HTML",
+        konten: "Pada kesempatan kali ini, kita akan mengeksplorasi secara mendalam penggunaan Form, Tabel, dan Semantik HTML. Bagi mereka yang belum familiar dengan dasar-dasar struktur HTML, silakan kunjungi link ini untuk pemahaman yang lebih mendalam."
     },
     {
         img: "/article/HTML_3.png",
