@@ -1,69 +1,64 @@
 import ContentArtikel from "@/components/articles/ContentArtikel";
+import { ArtikelSatu } from "@/constants/article/tutorial/article_satu";
+import Link from "next/link";
 
 const artikel = () => {
   return (
     <>
-      <ContentArtikel title="Cara Menginstall Visual Studio Code di Windows" img="/article/VSCODE.png">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
-          repellendus porro, quisquam vero dolore architecto consectetur quasi
-          unde ipsam nisi ex, fugiat accusantium officiis, ullam odit quod
-          beatae facilis ut. Ad quo dignissimos corrupti totam! At est vel
-          delectus temporibus. Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Enim rem sit omnis sunt, debitis, quis deleniti
-          culpa commodi est, tempore necessitatibus! Provident labore ut
-          laboriosam illum modi explicabo mollitia accusamus.
-        </p>
-        <h1 className="text-4xl font-semibold my-4">Daftar Isi</h1>
-        <div className="my-4 cursor-pointer space-y-2">
-          <li className="hover:underline">Lorem ipsum dolor sit amet.</li>
-          <li className="hover:underline">Lorem ipsum dolor sit amet.</li>
-          <li className="hover:underline">Lorem ipsum dolor sit amet.</li>
-          <li className="hover:underline">Lorem ipsum dolor sit amet.</li>
-          <li className="hover:underline">Lorem ipsum dolor sit amet.</li>
-          <li className="hover:underline">Lorem ipsum dolor sit amet.</li>
-        </div>
-        <p className="mt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          eligendi quidem dolorem, impedit autem vero hic nemo asperiores
-          consequuntur velit reprehenderit commodi quam tempore quas blanditiis?
-          Ex, maiores hic neque assumenda quam dolorum harum obcaecati esse
-          aperiam natus soluta nulla doloribus vero reiciendis itaque nam
-          pariatur mollitia quod exercitationem? Ipsam animi ipsum culpa dolore!
-          Nesciunt suscipit distinctio quidem dicta veniam incidunt maxime
-          voluptates nobis asperiores iusto ipsam obcaecati, minus impedit
-          pariatur libero itaque atque voluptatem laborum accusamus expedita
-          cumque, fugiat tempore alias nostrum. Nulla ipsa voluptatum saepe fuga
-          mollitia ipsum consectetur illum pariatur praesentium, distinctio modi
-          ab deserunt blanditiis qui.
-        </p>
-        <div className="my-4">
-          <h1 className="text-3xl font-semibold ">
-            1. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </h1>
-          <p className="md:mx-10 my-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            veritatis esse asperiores dolorum libero fuga hic, voluptas
-            aspernatur quia officiis aliquid qui dolor repellendus cum. Maiores,
-            molestias. Odio ipsam optio impedit possimus reiciendis placeat
-            totam omnis sequi quam tenetur. Aut cum quos quam enim incidunt
-            ipsum, et vero accusamus ratione.
-          </p>
-        </div>
-        <p className="my-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vel
-          temporibus ut est necessitatibus accusantium earum dolor, magni
-          debitis molestias doloremque molestiae a, ea iste nostrum rerum
-          voluptatem iure reiciendis incidunt! Et corporis eum possimus minima
-          esse eligendi quibusdam incidunt eaque id voluptatem ab, non
-          consectetur obcaecati. Quod, nemo quisquam sapiente quia tempora eaque
-          velit a, ullam corrupti perferendis fuga veniam ea cupiditate sunt
-          praesentium odit accusamus voluptatum optio laboriosam blanditiis,
-          reiciendis maxime culpa ratione? Eligendi soluta minima accusantium
-          autem deserunt. Sunt, provident temporibus aspernatur dolore
-          repellendus voluptatum. Aut id quidem aperiam quo qui harum dolore est
-          facere doloribus ab!
-        </p>
+      <ContentArtikel
+        title="Cara Menginstall Visual Studio Code di Windows"
+        img="/article/VSCODE.png"
+      >
+        {ArtikelSatu.map((item, index) => (
+          <div key={index}>
+            <p className="mb-5 text-justify">{item.pendahuluan}</p>
+            <div className="my-10 max-w-md border rounded-xl p-4">
+              <h1 className="text-2xl font-semibold">Daftar Isi</h1>
+              <ul className="my-2 list-disc list-inside">
+                {item.langkah_langkah &&
+                  item.langkah_langkah.map((items, index) => (
+                    <li
+                      className="font-medium cursor-pointer hover:underline"
+                      key={index}
+                    >
+                      <Link
+                        className="text-blue-800 hover:text-blue-950"
+                        href={`#${items.id}`}
+                      >
+                        {items.label}
+                      </Link>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+            <div className="my-2">
+              {item.langkah_langkah &&
+                item.langkah_langkah.map((items, index) => (
+                  <div key={index}>
+                    <h1 id={items.id} className="text-2xl font-semibold">
+                      {items.label}
+                    </h1>
+                    <ul className="my-5 border rounded-lg md:mx-10 p-5 list-inside list-decimal">
+                      {items.kontens &&
+                        items.kontens.map((konten, index) => (
+                          <li className="my-2" key={index}>
+                            {konten.konten}
+                          </li>
+                        ))}
+                    </ul>
+                  </div>
+                ))}
+            </div>
+            <div className="space-y-4">
+              <p className="text-justify">{item.penutup}</p>
+              <p className="text-justify">{item.penutup_lanjutan}</p>
+              <p className="text-justify text-2xl font-semibold">
+                {item.caption}
+              </p>
+            </div>
+            <div className="md:hidden mt-5 border-b-2" />
+          </div>
+        ))}
       </ContentArtikel>
     </>
   );

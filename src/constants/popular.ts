@@ -7,9 +7,9 @@ export const POPULAR = [
     },
     {
         img: "/article/VSCODE.png",
-        href: "/category/tutorial/#",
-        judul: "Bagaimana cara install VISUAL STUDIO CODE di Windows",
-        konten: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro, nesciunt numquam libero assumenda quos, beatae, ea alias impedit dolore temporibus modi eum quis. Similique omnis magni amet saepe minus?"
+        href: "/category/tutorial/vscode/cara-menginstall-vscode-diwindows",
+        judul: "Panduan Lengkap: Cara Menginstall Visual Studio Code di Windows",
+        konten: "Visual Studio Code (VS Code) adalah editor kode sumber lintas platform yang sangat populer yang dikembangkan oleh Microsoft. Dengan antarmuka pengguna yang bersih, beragam fitur, dan dukungan untuk berbagai bahasa pemrograman."
     },
     {
         img: "/article/HTML_1.png",

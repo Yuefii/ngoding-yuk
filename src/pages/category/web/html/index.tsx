@@ -10,7 +10,7 @@ const WebPages = () => {
       <Layout>
         <BackButton />
         <main className="mt-3">
-          <Content title="Belajar Html Dasar">
+          <Content title="Artikel Tentang Belajar Html Dasar">
             {HTML.map((item, index) => (
               <Popular
                 href={item.href}
