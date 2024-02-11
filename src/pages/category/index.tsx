@@ -19,6 +19,7 @@ const CategoryPages = () => {
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
   const currentItems = POPULAR.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(POPULAR.length / ITEMS_PER_PAGE);
 
   return (
     <>
@@ -46,12 +47,13 @@ const CategoryPages = () => {
             />
           ))}
         </Content>
-          <div className="mt-5 flex justify-center items-center">
-            <PaginationArticle
-              handlePageChange={handlePageChange}
-              currentPage={currentPage}
-            />
-          </div>
+        <div className="mt-5 flex justify-center items-center">
+          <PaginationArticle
+            handlePageChange={handlePageChange}
+            currentPage={currentPage}
+            totalPages={totalPages}
+          />
+        </div>
       </Layout>
     </>
   );
