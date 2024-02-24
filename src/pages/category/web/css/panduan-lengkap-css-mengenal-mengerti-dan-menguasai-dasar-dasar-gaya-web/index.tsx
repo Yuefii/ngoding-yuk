@@ -44,11 +44,6 @@ const artikel = () => {
                       {items.kontens &&
                         items.kontens.map((konten, index) => (
                           <p className="my-2" key={index}>
-                            {konten.title ? (
-                              <span className="font-semibold">
-                                {konten.title}
-                              </span>
-                            ) : null}
                             {konten.konten}
                           </p>
                         ))}

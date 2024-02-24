@@ -26,11 +26,9 @@ const useHTMLCodeStore = create<HTMLCodeState>(set => ({
     // ARTICLE BELAJAR STRUKTUR DASAR HTML UNTUK PEMULA
     code1: `
 <!DOCTYPE html>
-  <html lang="en">
+  <html lang="id">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World!</title>
+    <title>Mari Kita Belajar HTML | NgodingYuk</title>
   </head>
   <body>
     <p>Hello World!</p>

@@ -1,8 +1,8 @@
 export const HTML = [
     {
         img: "/article/html.png",
-        href: "/category/web/html/belajar-struktur-dasar-html-untuk-pemula",
-        judul: "Belajar Struktur Dasar HTML untuk pemula",
+        href: "/article/panduan-praktis-untuk-pemula-dalam-memahami-struktur-dasar-html",
+        judul: "Panduan Praktis untuk Pemula dalam Memahami Struktur Dasar HTML",
         konten: "HTML, singkatan dari HyperText Markup Language, merupakan bahasa markup yang digunakan untuk membuat struktur dasar sebuah halaman web. Bagi pemula, memahami elemen-elemen dasar HTML adalah langkah pertama dalam pengembangan web."
     },
     {
