@@ -1,5 +1,5 @@
 import { buttonVariants } from "@/components/ui/button";
-import { MYSQL } from "@/constants/mysql";
+import { DATABASE } from "@/constants/database";
 import { CategoryDatabase } from "@/constants/category";
 import Link from "next/link";
 import Layout from "../layout";
@@ -22,7 +22,7 @@ const DatabasePages = () => {
           ))}
         </div>
         <Content title="Artikel Populer">
-          {MYSQL.map((item, index) => (
+          {DATABASE.map((item, index) => (
             <Popular
               href={item.href}
               key={index}

@@ -1,7 +1,7 @@
+import { MYSQL } from "@/constants/mysql";
 import BackButton from "@/components/Back";
 import Layout from "../../layout";
 import Popular from "@/components/articles/Popular";
-import { MYSQL } from "@/constants/mysql";
 import Content from "@/components/articles/Content";
 
 const WebPages = () => {

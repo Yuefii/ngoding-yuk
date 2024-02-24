@@ -21,11 +21,11 @@ const Popular: React.FC<PopularProps> = ({ img, judul, konten, href }) => {
       </div>
       <div className="lg:my-3 col-span-12 lg:col-span-9">
         <Link href={href}>
-          <h1 className="text-2xl font-semibold mb-3 hover:underline cursor-pointer">
+          <h1 className="text-xl font-semibold mb-3 hover:underline cursor-pointer">
             {judul}
           </h1>
         </Link>
-        <p className="lg:pr-10 font-medium text-justify lg:text-lg opacity-80">
+        <p className="lg:pr-10 font-medium text-justify lg:text-md opacity-80">
           {konten}
         </p>
       </div>

@@ -8,7 +8,7 @@ const artikel = () => {
     <>
       <ContentArtikel
         title="Pengenalan MySQL : Sistem Manajemen Basis Data Relasional"
-        img="/article/MYSQL_1.png"
+        img="/article/mysql.png"
       >
         {ArtikelSatu.map((item, index) => (
           <div key={index}>

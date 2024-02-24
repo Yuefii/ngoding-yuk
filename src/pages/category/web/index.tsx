@@ -1,12 +1,26 @@
-import { HTML } from "@/constants/html";
+import { WEB } from "@/constants/web";
 import { CategoryWeb } from "@/constants/category";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import Layout from "../layout";
 import Popular from "@/components/articles/Popular";
 import Content from "@/components/articles/Content";
+import { PaginationArticle } from "@/components/PaginationArticle";
+import { useState } from "react";
+
+const ITEMS_PER_PAGE = 3;
 
 const WebPages = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handlePageChange = (pageNumber: any) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
+  const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
+  const currentItems = WEB.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(WEB.length / ITEMS_PER_PAGE);
   return (
     <>
       <Layout>
@@ -22,7 +36,7 @@ const WebPages = () => {
           ))}
         </div>
         <Content title="Artikel Populer">
-          {HTML.map((item, index) => (
+          {currentItems.map((item, index) => (
             <Popular
               href={item.href}
               key={index}
@@ -32,6 +46,13 @@ const WebPages = () => {
             />
           ))}
         </Content>
+        <div className="mt-5 flex justify-center items-center">
+          <PaginationArticle
+            handlePageChange={handlePageChange}
+            currentPage={currentPage}
+            totalPages={totalPages}
+          />
+        </div>
       </Layout>
     </>
   );
