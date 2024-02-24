@@ -32,7 +32,7 @@ const artikel = () => {
     <>
       <ContentArtikel
         title="Belajar Membuat Header, Footer, Audio, Video dan HTML Lanjutan"
-        img="/article/HTML_3.png"
+        img="/article/html.png"
       >
         {ArtikelTiga.map((item, index) => (
           <div key={index}>

@@ -26,7 +26,7 @@ const artikel = () => {
     <>
       <ContentArtikel
         title="Belajar Membuat Form, Tabel dan Semantik HTML"
-        img="/article/HTML_2.png"
+        img="/article/html.png"
       >
         {ArtikelDua.map((item, index) => (
           <div key={index}>

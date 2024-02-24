@@ -27,7 +27,7 @@ const artikel = () => {
     <>
       <ContentArtikel
         title="Belajar Struktur Dasar HTML untuk Pemula"
-        img="/article/HTML_1.png"
+        img="/article/html.png"
       >
         {ArtikelSatu.map((item, index) => (
           <div key={index}>
