@@ -37,11 +37,45 @@ const useHTMLCodeStore = create<HTMLCodeState>(set => ({
     `,
 
     code2: `
-<body>
-  <h1>Judul Utama</h1>
-  <p>Ini adalah paragraf pertama.</p>
-  <p>Ini adalah paragraf kedua.</p>
-</body>
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Halaman Web</title>
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di Situs Web Kami</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Layanan</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section>
+      <h2>Tentang Kami</h2>
+      <p>Situs web kami menyediakan informasi tentang berbagai topik menarik.</p>
+    </section>
+    
+    <section>
+      <h2>Layanan Kami</h2>
+      <ul>
+        <li>Pembuatan Situs Web</li>
+        <li>Pengembangan Aplikasi Web</li>
+        <li>Konsultasi Teknologi</li>
+      </ul>
+    </section>
+    
+    <footer>
+      <p>Hak Cipta &copy; 2024 Situs Web Kami. All rights reserved.</p>
+    </footer>
+  </body>
+  </html>    
     `,
 
     code3: `
